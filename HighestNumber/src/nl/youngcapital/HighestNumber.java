@@ -31,18 +31,20 @@ public class HighestNumber {
     public static void main(String[] args) {
         HighestNumber obj = new HighestNumber();
 
-        System.out.println("Please enter an array of integers, finish with 'end'");
+        System.out.println("Please enter an array of 5 integers");
         Scanner s = new Scanner(System.in);
         ArrayList<Integer> arrayList = new ArrayList<Integer>();
         
         while (true) {
         	if (s.hasNextInt()) {
-        		arrayList.add(s.nextInt());
-        	}        	
+        		arrayList.add(s.nextInt()); 	
+        	}
         	if (arrayList.size()==5) {
         		break;
         	}
         }
+        
+        
         
         int result = findMax(arrayList,arrayList.size()-1);
         int divide = obj.divideConquer(arrayList);
