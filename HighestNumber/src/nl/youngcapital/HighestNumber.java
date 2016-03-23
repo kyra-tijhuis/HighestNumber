@@ -39,6 +39,7 @@ public class HighestNumber {
         	if (s.hasNextInt()) {
         		arrayList.add(s.nextInt()); 	
         	}
+        	System.out.println(s.next());
         	if (arrayList.size()==5) {
         		break;
         	}
